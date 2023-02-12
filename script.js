@@ -69,5 +69,8 @@ function copiar(){
     mensaje.select();
     navigator.clipboard.writeText(mensaje.value)
     mensaje.value = "";
-    swal("Texto Copiado")
+    swal({
+        title:"Texto Copiado",
+        button: "Volver",
+    })
 }
